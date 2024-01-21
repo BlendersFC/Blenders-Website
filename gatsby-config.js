@@ -8,6 +8,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/Blenders-Website",
   siteMetadata: {
     title: `BlendBots FC`,
     description: `Humanoid soccer team.`,
