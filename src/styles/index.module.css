@@ -52,3 +52,16 @@
   max-width: none;
   line-height: var(--line-height-loose);
 }
+
+.memberCardGroup {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* justify-content: space-between; */
+  margin-bottom: 20px; /* Adjust as needed for spacing between groups */
+}
+
+/* Make each card take equal space */
+.memberCardGroup > div {
+  flex: 1;
+}
