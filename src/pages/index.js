@@ -7,104 +7,44 @@ import Seo from "../components/seo"
 import MemberCard from "../components/MemberCard/MemberCard"
 import InfoSection from "../components/InfoSection/InfoSection"
 import * as styles from "../styles/index.module.css"
+import { FaGithub, FaInstagram } from "react-icons/fa"
 
-// const links = [
-//   {
-//     text: "Tutorial",
-//     url: "https://www.gatsbyjs.com/docs/tutorial",
-//     description:
-//       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-//   },
-//   {
-//     text: "Examples",
-//     url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-//     description:
-//       "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-//   },
-//   {
-//     text: "Plugin Library",
-//     url: "https://www.gatsbyjs.com/plugins",
-//     description:
-//       "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-//   },
-//   {
-//     text: "Build and Host",
-//     url: "https://www.gatsbyjs.com/cloud",
-//     description:
-//       "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-//   },
-// ]
-
-// const samplePageLinks = [
-//   {
-//     text: "Page 2",
-//     url: "page-2",
-//     badge: false,
-//     description:
-//       "A simple example of linking to another page within a Gatsby site",
-//   },
-//   { text: "TypeScript", url: "using-typescript" },
-//   { text: "Server Side Rendering", url: "using-ssr" },
-//   { text: "Deferred Static Generation", url: "using-dsg" },
-// ]
-
-const moreLinks = [
-  { text: "Github", url: "https://github.com/BlendersFC" },
-  // {
-  //   text: "Documentation",
-  //   url: "https://gatsbyjs.com/docs/",
-  // },
-  // {
-  //   text: "Starters",
-  //   url: "https://gatsbyjs.com/starters/",
-  // },
-  // {
-  //   text: "Showcase",
-  //   url: "https://gatsbyjs.com/showcase/",
-  // },
-  // {
-  //   text: "Contributing",
-  //   url: "https://www.gatsbyjs.com/contributing/",
-  // },
-  // { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+// const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const teamMembers = [
   {
     name: "Marlene Cobian",
-    description: "Lead Developer",
+    description: "Mechatronics Engineer",
     imageNumber: 1,
   },
   {
     name: "Vicente Ruiz",
-    description: "Lead Developer",
+    description: "Mechatronics Eng. Student",
     imageNumber: 2,
   },
   {
     name: "Lizette Cruz",
-    description: "Lead Developer",
+    description: "Mechatronics Eng. Student",
     imageNumber: 3,
   },
   {
     name: "Ricardo Berumen",
-    description: "Lead Developer",
+    description: "Mechatronics Eng. Student",
     imageNumber: 4,
   },
   {
     name: "Montserrat Ballesteros",
-    description: "Lead Developer",
+    description: "Mechatronics Eng. Student",
     imageNumber: 5,
   },
   {
     name: "Iker Casillas",
-    description: "Lead Developer",
+    description: "Computer Science Student",
     imageNumber: 6,
   },
   {
     name: "Pedro Deniz",
-    description: "Lead Developer",
+    description: "Mechatronics Engineer",
     imageNumber: 7,
   },
 ]
@@ -123,6 +63,22 @@ const IndexPage = () => (
             account, we present our ongoing advancements, innovative pursuits,
             and collective endeavors. 🤖 ⚽ 🥅
           </p>
+          <div className={styles.iconContainer}>
+            <a
+              href="https://github.com/BlendersFC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className={styles.icon} />
+            </a>
+            <a
+              href="https://www.instagram.com/robotec.gdl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className={styles.icon} />
+            </a>
+          </div>
         </div>
       </div>
 
@@ -144,7 +100,11 @@ const IndexPage = () => (
           imageNumber={3}
           reverse={false}
         />
-        <InfoSection text="Hola" imageNumber={4} reverse={true} />
+        <InfoSection
+          text="AAAAAAAAAAAAAAAAAAAAAAAAAA"
+          imageNumber={4}
+          reverse={true}
+        />
       </div>
 
       <div className={styles.memberSection}>
@@ -195,12 +155,12 @@ const IndexPage = () => (
         </li>
       ))}
     </ul> */}
-      {moreLinks.map((link, i) => (
+      {/* {moreLinks.map((link, i) => (
         <React.Fragment key={link.url}>
           <a href={`${link.url}${utmParameters}`}>{link.text}</a>
           {i !== moreLinks.length - 1 && <> · </>}
         </React.Fragment>
-      ))}
+      ))} */}
     </div>
   </Layout>
 )

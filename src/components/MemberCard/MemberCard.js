@@ -3,14 +3,13 @@ import PropTypes from "prop-types"
 import * as styles from "./MemberCard.module.css"
 
 // Import images directly
-import image1 from "../../images/placeholder.png"
-import image2 from "../../images/placeholder.png"
-import image3 from "../../images/placeholder.png"
+import image1 from "../../images/profile-mar.jpg"
+import image2 from "../../images/profile-vicente.jpg"
+import image3 from "../../images/profile-liz.jpg"
 import image4 from "../../images/placeholder.png"
-import image5 from "../../images/placeholder.png"
-import image6 from "../../images/placeholder.png"
-import image7 from "../../images/placeholder.png"
-import image8 from "../../images/placeholder.png"
+import image5 from "../../images/profile-montse.jpg"
+import image6 from "../../images/profile-iker.jpg"
+import image7 from "../../images/profile-pedro.jpg"
 
 const MemberCard = ({ name, description, imageNumber }) => {
   const getImageSource = () => {
@@ -29,8 +28,6 @@ const MemberCard = ({ name, description, imageNumber }) => {
         return image6
       case 7:
         return image7
-      case 8:
-        return image8
       default:
         return null
     }

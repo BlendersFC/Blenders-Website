@@ -87,7 +87,7 @@
 }
 
 .memberContainer {
-  width: 60%;
+  width: 70%;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -103,4 +103,16 @@
   width: 50%;
   height: 400px;
   background-color: blue;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.icon {
+  font-size: 2.5em; /* Adjust the font size as needed */
+  margin: 0 10px; /* Adjust margin as needed */
 }
