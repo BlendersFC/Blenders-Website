@@ -2,8 +2,8 @@
   --border-radius: 4px;
   --color-text: #333;
   --color-primary: #268fb9;
-  --color-code-bg: #fff4db;
-  --color-secondary: #fe6c37;
+  --color-code-bg: #f4f9fc;
+  --color-secondary: #ff6b5b;
   --color-code: #8a6534;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -22,7 +22,7 @@
   --space-4: 24px;
   --space-5: 32px;
   --space-6: 64px;
-  --size-content: 54rem;
+  --size-content: 90rem;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
 }

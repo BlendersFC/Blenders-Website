@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.text {
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+
+.rectangle {
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  height: 400px;
+  background-color: #b0cef8;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}

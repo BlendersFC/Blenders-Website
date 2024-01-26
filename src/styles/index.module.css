@@ -45,12 +45,22 @@
 }
 
 .textCenter {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .intro {
   max-width: none;
   line-height: var(--line-height-loose);
+}
+
+.mainSection {
+  /* display: "block"; */
+  flex-direction: column;
+  text-align: center;
 }
 
 .memberCardGroup {
@@ -61,7 +71,36 @@
   margin-bottom: 20px; /* Adjust as needed for spacing between groups */
 }
 
-/* Make each card take equal space */
+/* Make each card take equal space and add a margin between cards */
 .memberCardGroup > div {
   flex: 1;
+  margin-right: 10px; /* Adjust as needed for spacing between cards */
+}
+
+/* Ensure the last card in each group has no right margin */
+.memberCardGroup > div:last-child {
+  margin-right: 0;
+}
+
+.memberSection {
+  text-align: center;
+}
+
+.memberContainer {
+  width: 60%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  margin: auto;
+  text-align: center;
+  font-size: large;
+}
+
+.rectangle {
+  width: 50%;
+  height: 400px;
+  background-color: blue;
 }

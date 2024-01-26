@@ -28,7 +28,8 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
+          // maxWidth: `var(--size-content)`,
+          backgroundColor: `var(--color-code-bg)`,
           padding: `var(--size-gutter)`,
         }}
       >

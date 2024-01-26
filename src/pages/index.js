@@ -1,10 +1,11 @@
 import * as React from "react"
 // import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import MemberCard from "../components/myComponents/MemberCard"
+import MemberCard from "../components/MemberCard/MemberCard"
+import InfoSection from "../components/InfoSection/InfoSection"
 import * as styles from "../styles/index.module.css"
 
 // const links = [
@@ -110,58 +111,66 @@ const teamMembers = [
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Blenders FC!</b>
-      </h1>
-      <p>
-        A Mexican robotics team preparing for potential entry into the RoboCup
-        Humanoid League KidSize Soccer division. Within this account, we present
-        our ongoing advancements, innovative pursuits, and collective endeavors.
-        🤖 ⚽ 🥅
-      </p>
-
-      <br></br>
-      <br></br>
-      <br></br>
-
-      <h2>Our Team</h2>
-
-      <div>
-        {teamMembers.map(
-          (member, index) =>
-            // Render pairs of member cards
-            index % 2 === 0 && (
-              <div key={index} className={styles.memberCardGroup}>
-                <MemberCard {...teamMembers[index]} />
-
-                {index + 1 < teamMembers.length && (
-                  <MemberCard {...teamMembers[index + 1]} />
-                )}
-              </div>
-            )
-        )}
+    <div>
+      <div className={styles.textCenter}>
+        <h1>
+          Welcome to <b>Blenders FC!</b>
+        </h1>
+        <div>
+          <p className={styles.description}>
+            A Mexican robotics team preparing for potential entry into the
+            RoboCup Humanoid League KidSize Soccer division. Within this
+            account, we present our ongoing advancements, innovative pursuits,
+            and collective endeavors. 🤖 ⚽ 🥅
+          </p>
+        </div>
       </div>
+
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      {/* <p className={styles.intro}>
+
+      <div className={styles.mainSection}>
+        <InfoSection
+          text="We love to learn and share thoughtful contents"
+          imageNumber={1}
+          reverse={false}
+        />
+        <InfoSection
+          text="We try to have fun with science"
+          imageNumber={2}
+          reverse={true}
+        />
+        <InfoSection
+          text="Honorable mention in Mexican Tournament of Robotics 2023"
+          imageNumber={3}
+          reverse={false}
+        />
+        <InfoSection text="Hola" imageNumber={4} reverse={true} />
+      </div>
+
+      <div className={styles.memberSection}>
+        <h2>Meet the Team!</h2>
+
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <div className={styles.memberContainer}>
+            {teamMembers.map(
+              (member, index) =>
+                // Render pairs of member cards
+                index % 2 === 0 && (
+                  <div key={index} className={styles.memberCardGroup}>
+                    <MemberCard {...teamMembers[index]} />
+
+                    {index + 1 < teamMembers.length && (
+                      <MemberCard {...teamMembers[index + 1]} />
+                    )}
+                  </div>
+                )
+            )}
+          </div>
+        </div>
+
+        <br></br>
+
+        {/* <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
@@ -172,8 +181,8 @@ const IndexPage = () => (
         <br />
         Edit <code>src/pages/index.js</code> to update this page.
       </p> */}
-    </div>
-    {/* <ul className={styles.list}>
+      </div>
+      {/* <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
           <a
@@ -186,12 +195,13 @@ const IndexPage = () => (
         </li>
       ))}
     </ul> */}
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
+      {moreLinks.map((link, i) => (
+        <React.Fragment key={link.url}>
+          <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+          {i !== moreLinks.length - 1 && <> · </>}
+        </React.Fragment>
+      ))}
+    </div>
   </Layout>
 )
 
