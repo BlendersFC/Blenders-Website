@@ -86,17 +86,17 @@ const IndexPage = () => (
 
       <div className={styles.mainSection}>
         <InfoSection
-          text="We love to learn and share thoughtful contents"
+          text="AAAAAAAAAAAAAAAAAAAAAAAA"
           imageNumber={1}
           reverse={false}
         />
         <InfoSection
-          text="We try to have fun with science"
+          text="AAAAAAAAAAAAAAAAAAAAAA"
           imageNumber={2}
           reverse={true}
         />
         <InfoSection
-          text="Honorable mention in Mexican Tournament of Robotics 2023"
+          text="Participation in Mexican Tournament of Robotics 2023"
           imageNumber={3}
           reverse={false}
         />
@@ -108,7 +108,7 @@ const IndexPage = () => (
       </div>
 
       <div className={styles.memberSection}>
-        <h2>Meet the Team!</h2>
+        <h2 id="meet-team">Meet the Team!</h2>
 
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div className={styles.memberContainer}>

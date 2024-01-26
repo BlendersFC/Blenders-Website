@@ -22,6 +22,11 @@ const Layout = ({ children }) => {
     }
   `)
 
+  if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+  }
+
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
@@ -44,7 +49,9 @@ const Layout = ({ children }) => {
         >
           © {new Date().getFullYear()} &middot; Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="https://www.gatsbyjs.com" style={{ color: "black" }}>
+            Gatsby
+          </a>
         </footer>
       </div>
     </>
