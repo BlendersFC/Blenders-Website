@@ -4,6 +4,14 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 70px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.container.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 .text {
   justify-content: center;

@@ -11,7 +11,7 @@
   background-color: #fff;
 
   &:hover {
-    box-shadow: 0 8px 16px rgba(118, 100, 255, 0.2);
+    box-shadow: 0 8px 16px #002b4e6d;
   }
 }
 

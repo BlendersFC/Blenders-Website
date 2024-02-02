@@ -68,13 +68,13 @@
   /* align-items: center; */
   justify-content: center;
   /* justify-content: space-between; */
-  margin-bottom: 20px; /* Adjust as needed for spacing between groups */
+  margin-bottom: 1.25rem; /* 20px converted to rem */
 }
 
 /* Make each card take equal space and add a margin between cards */
 .memberCardGroup > div {
   flex: 1;
-  margin-right: 10px; /* Adjust as needed for spacing between cards */
+  margin-right: 0.625rem; /* 10px converted to rem */
 }
 
 /* Ensure the last card in each group has no right margin */
@@ -84,6 +84,12 @@
 
 .memberSection {
   text-align: center;
+  padding-top: 3.125rem; /* 50px converted to rem */
+}
+
+.memberSectionTitle {
+  color: #002b4e;
+  font-size: xx-large;
 }
 
 .memberContainer {
@@ -101,7 +107,7 @@
 
 .rectangle {
   width: 50%;
-  height: 400px;
+  height: 25rem; /* 400px converted to rem */
   background-color: blue;
 }
 
@@ -109,10 +115,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Adjust margin as needed */
+  margin-top: 1.25rem; /* 20px converted to rem */
 }
 
 .icon {
   font-size: 2.5em; /* Adjust the font size as needed */
-  margin: 0 10px; /* Adjust margin as needed */
+  margin: 0 0.625rem; /* 10px converted to rem */
 }

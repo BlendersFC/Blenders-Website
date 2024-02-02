@@ -1,7 +1,4 @@
 import * as React from "react"
-// import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import MemberCard from "../components/MemberCard/MemberCard"
@@ -108,7 +105,9 @@ const IndexPage = () => (
       </div>
 
       <div className={styles.memberSection}>
-        <h2 id="meet-team">Meet the Team!</h2>
+        <h2 className={styles.memberSectionTitle} id="meet-team">
+          Meet the Team!
+        </h2>
 
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div className={styles.memberContainer}>

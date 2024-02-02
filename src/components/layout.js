@@ -35,9 +35,8 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           // maxWidth: `var(--size-content)`,
           padding: `var(--size-gutter)`,
-          background: "rgb(172,219,232)",
           background:
-            "linear-gradient(rgba(230,246,251,1), rgba(170,220,224,1), rgba(111,178,192,1))",
+            "linear-gradient(rgba(230,246,251,1), rgba(170,220,224,1), rgba(230,246,251,1))",
         }}
       >
         <main>{children}</main>
