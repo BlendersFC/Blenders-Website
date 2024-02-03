@@ -5,6 +5,7 @@
   padding: 16px;
   margin-top: 10px;
   border: 1px solid #ddd;
+  max-width: 50%;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
@@ -22,6 +23,7 @@
   margin-bottom: 16px;
   background-color: grey;
   overflow: hidden;
+  position: relative;
 }
 
 .memberInfo {

@@ -20,12 +20,11 @@
 }
 
 .rectangle {
-  /* align-items: center; */
   justify-content: center;
   text-align: center;
+  align-items: center;
   width: 50%;
-  height: 400px;
-  /* background-color: #b0cef8; */
+  /* height: 400px; */
 }
 
 .reverse {
@@ -33,6 +32,23 @@
 }
 
 .img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  height: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Display vertically on smaller screens */
+    margin-bottom: 40px; /* Adjust margin as needed */
+  }
+
+  .text,
+  .rectangle {
+    width: 100%; /* Take up full width on smaller screens */
+  }
+
+  .rectangle {
+    height: auto; /* Adjust height as needed, or remove for automatic sizing */
+  }
 }

@@ -6,43 +6,48 @@ import InfoSection from "../components/InfoSection/InfoSection"
 import * as styles from "../styles/index.module.css"
 import { FaGithub, FaInstagram } from "react-icons/fa"
 
-// const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
-
 const teamMembers = [
   {
     name: "Marlene Cobian",
     description: "Mechatronics Engineer",
     imageNumber: 1,
+    linkedinUrl: "https://www.linkedin.com/in/marlene-cobian/",
   },
   {
     name: "Vicente Ruiz",
     description: "Mechatronics Eng. Student",
     imageNumber: 2,
+    linkedinUrl: "https://www.linkedin.com/in/vicenteimt2023/",
   },
   {
     name: "Lizette Cruz",
     description: "Mechatronics Eng. Student",
     imageNumber: 3,
+    linkedinUrl: "linkedin.com/in/lizette-cruz-rodríguez-2b2b7427b",
   },
   {
     name: "Ricardo Berumen",
     description: "Mechatronics Eng. Student",
     imageNumber: 4,
+    linkedinUrl: "https://www.linkedin.com/in/marlene-cobian/",
   },
   {
     name: "Montserrat Ballesteros",
     description: "Mechatronics Eng. Student",
     imageNumber: 5,
+    linkedinUrl: "https://www.linkedin.com/in/montserratballesterosherrera/",
   },
   {
     name: "Iker Casillas",
     description: "Computer Science Student",
     imageNumber: 6,
+    linkedinUrl: "https://www.linkedin.com/in/ikercasillass/",
   },
   {
     name: "Pedro Deniz",
     description: "Mechatronics Engineer",
     imageNumber: 7,
+    linkedinUrl: "https://www.linkedin.com/in/pedro-deniz/",
   },
 ]
 
@@ -50,7 +55,7 @@ const IndexPage = () => (
   <Layout>
     <div>
       <div className={styles.textCenter}>
-        <h1>
+        <h1 className={styles.title}>
           Welcome to <b>Blenders FC!</b>
         </h1>
         <div>
@@ -128,38 +133,7 @@ const IndexPage = () => (
         </div>
 
         <br></br>
-
-        {/* <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p> */}
       </div>
-      {/* <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul> */}
-      {/* {moreLinks.map((link, i) => (
-        <React.Fragment key={link.url}>
-          <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-          {i !== moreLinks.length - 1 && <> · </>}
-        </React.Fragment>
-      ))} */}
     </div>
   </Layout>
 )

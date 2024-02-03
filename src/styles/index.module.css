@@ -52,6 +52,10 @@
   min-height: 100vh;
 }
 
+.title {
+  text-align: center;
+}
+
 .intro {
   max-width: none;
   line-height: var(--line-height-loose);
@@ -93,7 +97,7 @@
 }
 
 .memberContainer {
-  width: 70%;
+  width: 95%;
   align-self: center;
   display: flex;
   flex-direction: column;

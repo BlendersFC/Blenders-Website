@@ -6,12 +6,12 @@ import * as styles from "./MemberCard.module.css"
 import image1 from "../../images/profile-mar.jpg"
 import image2 from "../../images/profile-vicente.jpg"
 import image3 from "../../images/profile-liz.jpg"
-import image4 from "../../images/placeholder.png"
+import image4 from "../../images/profile-ricardo.jpg"
 import image5 from "../../images/profile-montse.jpg"
 import image6 from "../../images/profile-iker.jpg"
 import image7 from "../../images/profile-pedro.jpg"
 
-const MemberCard = ({ name, description, imageNumber }) => {
+const MemberCard = ({ name, description, imageNumber, linkedinUrl }) => {
   const getImageSource = () => {
     switch (imageNumber) {
       case 1:
@@ -41,7 +41,17 @@ const MemberCard = ({ name, description, imageNumber }) => {
         {imageUrl && <img src={imageUrl} alt="" width={100} height={100} />}
       </div>
       <div className={styles.memberInfo}>
-        <h3>{name}</h3>
+        {/* Use an anchor tag to make the name a clickable link */}
+        <h3>
+          <a
+            href={linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.linkedInLink}
+          >
+            {name}
+          </a>
+        </h3>
         <p>{description}</p>
       </div>
     </div>

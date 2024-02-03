@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import * as styles from "./InfoSection.module.css"
 import { useInView } from "react-intersection-observer"
