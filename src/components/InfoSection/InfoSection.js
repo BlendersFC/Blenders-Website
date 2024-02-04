@@ -2,10 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import * as styles from "./InfoSection.module.css"
 import { useInView } from "react-intersection-observer"
-import image1 from "../../images/TMR-1.jpg"
+import image1 from "../../images/TMR-5.jpeg"
 import image2 from "../../images/TMR-2.jpg"
-import image3 from "../../images/TMR-3.jpg"
-import image4 from "../../images/TMR-4.jpg"
+import image4 from "../../images/TMR-3.jpg"
+import image3 from "../../images/TMR-6.jpeg"
 
 const InfoSection = ({ text, imageNumber, reverse }) => {
   const [ref, inView] = useInView({

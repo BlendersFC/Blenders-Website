@@ -29,7 +29,7 @@ const teamMembers = [
     name: "Ricardo Berumen",
     description: "Mechatronics Eng. Student",
     imageNumber: 4,
-    linkedinUrl: "https://www.linkedin.com/in/marlene-cobian/",
+    linkedinUrl: "https://www.linkedin.com/in/ricardo-berumen-arellano/",
   },
   {
     name: "Montserrat Ballesteros",
@@ -60,10 +60,11 @@ const IndexPage = () => (
         </h1>
         <div>
           <p className={styles.description}>
-            A Mexican robotics team preparing for potential entry into the
-            RoboCup Humanoid League KidSize Soccer division. Within this
-            account, we present our ongoing advancements, innovative pursuits,
-            and collective endeavors. 🤖 ⚽ 🥅
+            We are a passionate Mexican robotics team based in Guadalajara,
+            Mexico. Preparing for potential entry into the RoboCup Humanoid
+            League KidSize Soccer division. Within this website, we proudly
+            share our ongoing advancements, innovative pursuits, and the
+            collective spirit that defines us. 🤖⚽🥅
           </p>
           <div className={styles.iconContainer}>
             <a
@@ -88,22 +89,22 @@ const IndexPage = () => (
 
       <div className={styles.mainSection}>
         <InfoSection
-          text="AAAAAAAAAAAAAAAAAAAAAAAA"
+          text="Witness the magic of the only team that could sign Lionel Mechssi and Cristiano Robonaldo"
           imageNumber={1}
           reverse={false}
         />
         <InfoSection
-          text="AAAAAAAAAAAAAAAAAAAAAA"
+          text="We're proudly representing Tecnológico de Monterrey"
           imageNumber={2}
           reverse={true}
         />
         <InfoSection
-          text="Participation in Mexican Tournament of Robotics 2023"
+          text="We actively participated in the Mexican Tournament of Robotics 2023"
           imageNumber={3}
           reverse={false}
         />
         <InfoSection
-          text="AAAAAAAAAAAAAAAAAAAAAAAAAA"
+          text="Join our journey to conquer the RoboCup championship!"
           imageNumber={4}
           reverse={true}
         />

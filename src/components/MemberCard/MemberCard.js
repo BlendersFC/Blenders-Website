@@ -47,7 +47,7 @@ const MemberCard = ({ name, description, imageNumber, linkedinUrl }) => {
             href={linkedinUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.linkedInLink}
+            // className={styles.linkedInLink}
           >
             {name}
           </a>
