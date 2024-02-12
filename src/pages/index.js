@@ -9,43 +9,43 @@ import { FaGithub, FaInstagram } from "react-icons/fa"
 const teamMembers = [
   {
     name: "Marlene Cobian",
-    description: "Mechatronics Engineer",
+    description: "Motion Control Team",
     imageNumber: 1,
     linkedinUrl: "https://www.linkedin.com/in/marlene-cobian/",
   },
   {
     name: "Vicente Ruiz",
-    description: "Mechatronics Eng. Student",
+    description: "Computer Vision Team",
     imageNumber: 2,
     linkedinUrl: "https://www.linkedin.com/in/vicenteimt2023/",
   },
   {
     name: "Lizette Cruz",
-    description: "Mechatronics Eng. Student",
+    description: "Computer Vision Team",
     imageNumber: 3,
     linkedinUrl: "linkedin.com/in/lizette-cruz-rodríguez-2b2b7427b",
   },
   {
     name: "Ricardo Berumen",
-    description: "Mechatronics Eng. Student",
+    description: "Motion Control Team",
     imageNumber: 4,
     linkedinUrl: "https://www.linkedin.com/in/ricardo-berumen-arellano/",
   },
   {
     name: "Montserrat Ballesteros",
-    description: "Mechatronics Eng. Student",
+    description: "Computer Vision Team",
     imageNumber: 5,
     linkedinUrl: "https://www.linkedin.com/in/montserratballesterosherrera/",
   },
   {
     name: "Iker Casillas",
-    description: "Computer Science Student",
+    description: "Computer Vision Team",
     imageNumber: 6,
     linkedinUrl: "https://www.linkedin.com/in/ikercasillass/",
   },
   {
     name: "Pedro Deniz",
-    description: "Mechatronics Engineer",
+    description: "Motion Control Team",
     imageNumber: 7,
     linkedinUrl: "https://www.linkedin.com/in/pedro-deniz/",
   },
@@ -99,7 +99,7 @@ const IndexPage = () => (
           reverse={true}
         />
         <InfoSection
-          text="We actively participated in the Mexican Tournament of Robotics 2023"
+          text="We participated in the Mexican Tournament of Robotics 2023 and are now preparing to compete in the 2024 edition!"
           imageNumber={3}
           reverse={false}
         />
